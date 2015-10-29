@@ -38,4 +38,6 @@ Gen icon-196.png
 
 # TODO
 
-* iOS screens size.
+* iOS screens sizes.
+* choose which sizes to gen.
+* define sizes array.

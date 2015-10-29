@@ -10,7 +10,8 @@ module ImageSizes
     apple_watch_icon_sizes = [196, 172, 88, 87, 80, 58, 55, 48]
 
     all_sizes = ios_icon_sizes + apple_watch_icon_sizes
-    all_sizes.uniq.sort.each do |size|
+
+    all_sizes.uniq.sort.reverse.each do |size|
     	image.resize "#{size}x#{size}"
       name = "icon-#{size}.png"
     	image.write name
